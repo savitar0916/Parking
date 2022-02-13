@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackGround"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="@android:color/background_light"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBackGround"
+                android:text="狀態"
+                android:textColor="@color/colorWord"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/lin_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="帳號"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorWord"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txv_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:text="訪客"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorBackGround"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBackGround"
+                android:text="使用者"
+                android:textColor="@color/colorWord"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:text="通知開"
+                android:textColor="@color/colorWord"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
